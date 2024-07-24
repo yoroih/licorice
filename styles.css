@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #323232;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-width: 300px;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #d7d7d7;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.first_color {
+  color: #ff00ff;
+}
+
+.second_color {
+  color: #ffff00;
+}
+
+.third_color {
+  color: #ffffff;
+}
+
+.fourth_color {
+  color: #00ffff;
+}
+
+.header_icon {
+  display: block;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(223, 74, 133, 0.1);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.header_icon:active {
+  transform: scale(0.90);
+  box-shadow: 0 6px 8px rgba(223, 74, 133, 0.4);
+}
+
+/*********/
+
+.sidenav {
+  max-height: calc(95% - 70px);
+  width: 250px;
+  background-color: #323232;
+  border-left: 0px solid rgb(74, 74, 74);
+  border-bottom: 1px solid rgb(74, 74, 74);
+  border-bottom-left-radius: 10px;
+  box-shadow: -7px 0 5px -5px rgba(0, 0, 0, 0.5), 
+              0 7px 5px -5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  overflow: auto;
+  z-index: 5;
+  transition: 0.5s;
+}
+
+.formForColors {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 70px;
+  max-width: 250px;
+  padding: 25px 10px 25px 10px;
+}
+
+.colorInputs {
+  display: flex;
+  height: 45%;
+  gap: 5%;
+  justify-content: space-between;
+}
+
+.inputColor {
+  height: 15px;
+  width: 75%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.colorDisplay {
+  background-color: white;
+  width: 10%;
+  border-radius: 3px;
+}
+
+.colorFormButtons {
+  justify-content: space-evenly;
+}
+
+.addBtn {
+  height: 18px;
+  width: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addBtn:hover {
+  background-color: #696a69;
+  color: rgb(227, 227, 227);
+  box-shadow: 0 4px 6px rgba(206, 206, 206, 0.4);
+}
+
+.addBtn:active {
+  background-color: #373837; 
+}
+
+.addBtn:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 3px 2px rgba(93, 93, 93, 0.6); /* Add a custom focus outline */
+}
+
+.hide_buttons {
+  max-height: 50px;
+  padding: 2px;
+  background: rgba(128, 128, 128, 0.981);
+  box-shadow: 0px 2px 9px 5px rgb(128, 128, 128);
+  transition: max-height 0.3s ease;
+}
+
+.buttons {
+  height: 30px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addNewColorBtn, .removeNewColorBtn {
+  width: 30px;
+  height: 60%;
+  background-color: #aeaeae;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9), -2px -2px 5px rgba(255, 255, 255, 0.1);
+  font-size: 15px;
+  color: #252525;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.addNewColorBtn:active, .removeNewColorBtn:active {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.6), inset -2px -2px 5px rgba(255, 255, 255, 0.15);
+  transform: translateY(2px);
+}
+
+.hide_buttons.visible {
+  max-height: 50px;
+  overflow: hidden; 
+}
+
+.buttons.visibleButtons {
+  display: flex;
+}
+
+/***********/
+main {
+  height: 100vh;
+}
+
+.colors {
+  width: 100%;
+  height: 100%;
+}

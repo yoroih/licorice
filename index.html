@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="assets/paleta_de_colores.svg" type="image/x-icon">
+  <title>licorice</title>
+</head>
+<body>
+  <header>
+    <h2>Licorice</h2>
+    <h1>
+      <span class="first_color">Li</span>ve <span class="second_color">Co</span>lor <span class="third_color">Ri</span>ot <span class="fourth_color">Ce</span>nter
+    </h1>
+
+    <img class="header_icon" src="assets/paleta_de_colores.svg" width="50px" alt="icono de la web" onclick="toggleNav()">
+
+  </header>
+
+  <aside id="mySidenav" class="sidenav">
+
+    <div class="formForColors">
+
+      <div class="colorInputs">
+        <input class="inputColor" type="text" placeholder="#ffffff">
+        <div class="colorDisplay"></div>
+        <button class="addBtn" type="button">+</button>
+      </div>
+
+    </div>
+
+
+    <div class="hide_buttons">
+      <div class="buttons">
+        <button class="addNewColorBtn">+</button>
+        <button class="removeNewColorBtn">-</button>
+      </div>
+    </div>
+
+
+    <template id="colorFormTemplate">
+
+    </template>
+
+  </aside>
+
+
+  <main>
+    <div class="colors">
+      
+    </div> 
+  </main>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
