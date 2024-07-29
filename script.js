@@ -41,7 +41,7 @@ document.body.addEventListener('click', function(event) {
       sidenav.style.width = "0";
   }
 
-  if (event.target.matches('.addBtn')) {
+  if (event.target.matches('.addBlock')) {
       const colorValue = document.querySelector('.inputColor').value;
       const hexColorPattern = /^#([0-9A-F]{3}){1,2}$/i;
 
@@ -55,23 +55,4 @@ document.body.addEventListener('click', function(event) {
 
 });
 
-document.addEventListener('DOMContentLoaded', function(){
-
-  const $hideButtons = document.querySelector('.hide_buttons');
-  const $buttons = document.querySelector('.buttons');
-
-  $hideButtons.addEventListener('mouseover', function(){
-    $hideButtons.classList.add('visible');
-    $buttons.classList.add('visibleButtons');
-  });
-
-  $hideButtons.addEventListener('mouseout', function(){
-    $hideButtons.classList.remove('visible');
-    $buttons.classList.remove('visibleButtons');
-  });
-
-
-
-
-});
 
