@@ -118,7 +118,7 @@ header h1 {
   justify-content: space-evenly;
 }
 
-.addBlock {
+.addBlock, .removeBlock {
   height: 18px;
   width: 20px;
   border-radius: 10px;
@@ -132,17 +132,17 @@ header h1 {
   transition: background-color 0.2s;
 }
 
-.addBlock:hover {
+.addBlock:hover, .removeBlock:hover {
   background-color: #696a69;
   color: rgb(227, 227, 227);
   box-shadow: 0 4px 6px rgba(206, 206, 206, 0.4);
 }
 
-.addBlock:active {
+.addBlock:active, .removeBlock:hover {
   background-color: #373837; 
 }
 
-.addBlock:focus {
+.addBlock:focus, .removeBlock:hover {
   outline: none; /* Remove the default focus outline */
   box-shadow: 0 0 3px 2px rgba(93, 93, 93, 0.6); /* Add a custom focus outline */
 }
